@@ -1,5 +1,5 @@
 [project]
-name = "bong_kindle"
+name = "bong_epub"
 version = "0.0.1"
 description = "A node based flow editor for AI workflows"
 readme = "README.md"
@@ -22,14 +22,14 @@ dev = [
 ]
 
 [project.scripts]
-bong_kindle = "cli:main"
+bong_epub = "cli:main"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["bong_kindle"]
+packages = ["bong_epub"]
 
 [tool.ruff]
 target-version = "py312"
@@ -38,6 +38,6 @@ target-version = "py312"
 select = ["I"]
 
 [tool.ruff.lint.isort]
-known-first-party = ["bong_kindle"]
+known-first-party = ["bong_epub"]
 section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
 combine-as-imports = true

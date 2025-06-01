@@ -121,6 +121,16 @@ def save_book(
 
 
 def scrape_book_from_url(url: str, save_file: Optional[str] = None) -> dict[str, str]:
+    """Scrape a book from a URL and save it to an EPUB file.
+    
+    Args:
+        url: The URL of the book to scrape.
+        save_file: The path to save the EPUB file.
+            If None, the file will be saved to the current directory as <title>-<author>.epub.
+    
+    Returns:
+        A dictionary containing the title, author, cover picture, and book content.
+    """
     chapter_links = extract_preview_links_and_titles(url)
     title, author = get_title_and_author(url)
     cover_picture = get_cover_picture(url)

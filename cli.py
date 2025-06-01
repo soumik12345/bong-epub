@@ -1,6 +1,6 @@
 import fire
 
-from bong_kindle.scrape import scrape_book_from_url
+from bong_epub.scrape import scrape_book_from_url
 
 
 def main():

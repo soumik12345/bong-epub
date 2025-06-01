@@ -40,7 +40,7 @@ wheels = [
 ]
 
 [[package]]
-name = "bong-kindle"
+name = "bong-epub"
 version = "0.0.1"
 source = { editable = "." }
 dependencies = [
